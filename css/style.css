@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+
+section.left {
+   width: 50%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 15px;
+}
+
+h1.title {
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+p.paragraph {
+    color: #fff;
+    font-size: 0.9rem;
+}
+
+section.right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button.button {
+    width: 100%;
+    height: 10%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--Blue);
+    color: #fff;
+}
+
+div.formulary {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+form.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    gap: 5px;
+}
+
+input {
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-weight: 500;
+    border: 1px solid var(--Grayish-Blue);
+}
+
+button.submit {
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Green);
+    color: #fff;
+    cursor: pointer;
+}
+
+p.terms-services {
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* CLASS ERROR FORM */
+
+.error {
+    border: solid 1px var(--Red);
+    background: url(../images/icon-error.svg) no-repeat ;
+    background-position: 95%;
+}
+
+
+.message-error-first-name {
+    width: fit-content;
+    position: relative;
+    font-size: 0.7rem;
+    color: var(--Red);
+    left: 63%;
+}
+
+.message-error-last-name {
+    width: fit-content;
+    position: relative;
+    font-size: 0.7rem;
+    color: var(--Red);
+    left: 63%;
+}
+
+.message-error-email {
+    width: fit-content;
+    position: relative;
+    font-size: 0.7rem;
+    color: var(--Red);
+    left: 63%;
+}
+
+.message-error-password {
+    width: fit-content;
+    position: relative;
+    font-size: 0.7rem;
+    color: var(--Red);
+    left: 63%;
+}
+ 
+@media screen and (max-width: 858px) {
+
+    .message-error-first-name {
+        left: 50%;
+    }
+    
+    .message-error-last-name {
+        left: 50%;
+    }
+    
+    .message-error-email {
+        left: 50%;
+    }
+
+    .message-error-password {
+        left: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.left {
+        width: 70%;
+        height: 40%;
+        text-align: center;
+     }
+
+     section.right {
+        width: 70%;
+        height: 60%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+        height: 500px;
+    }
+
+    h1.title {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    
+    p.paragraph {
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    button.button {
+        height: auto;
+        padding: 20px;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    div.formulary {
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    input {
+        height: 40px;
+    }
+
+    button.submit {
+        height: 40px;
+    }
+    
+
+}

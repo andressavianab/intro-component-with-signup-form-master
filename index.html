@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-usa">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="left">
+      <h1 class="title">
+        Learn to code by watching others
+      </h1>
+      <p class="paragraph">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable. 
+      </p>
+    </section>
+    <section class="right">
+      <button class="button">Try it free 7 days then $20/mo. thereafter</button>
+      <div class="formulary">
+        <form id="form" action="" class="form">
+          <input id="first-name" type="text" placeholder="First Name">
+          <span id="requiredFname" class="message-error-first-name"></span>
+          <input id="last-name" type="text" placeholder="Last Name">
+          <span id="requiredLname" class="message-error-last-name"></span>
+          <input id="email" type="email" placeholder="Email Address">
+          <span id="requiredEmail" class="message-error-email"></span>
+          <input id="password" type="password" placeholder="Password">
+          <span id="requiredPassword" class="message-error-password"></span> 
+          <button class="submit" type="submit">Claim your free trial </button>
+        </form>
+        <p class="terms-services">By clicking the button, you are agreeing to our Terms and Services</p>
+      </div>
+    </section>
+  </main> 
+  <!--
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  -->
+  <script src="./js/script.js"></script>
+</body>
+</html>
